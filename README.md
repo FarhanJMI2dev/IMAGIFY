@@ -30,7 +30,7 @@ integrated with Razorpay
 
 ## Installation
 
-Install my-project with npm
+Install Dependencies and Run
 
 client
 ```bash
