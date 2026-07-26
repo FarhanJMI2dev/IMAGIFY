@@ -23,7 +23,7 @@ const registerUser = async (req, res) => {
         const newUser = new userModel(userData)
         const user = await newUser.save()
         const token = jwt.sign({ id: user }, process.env.JWT_SECRET)
-        res.json({ succes: true, token, user: { name: user.name } })
+        res.json({ success: true, token, user: { name: user.name } })
 
     } catch (error) {
         console.log(error)
