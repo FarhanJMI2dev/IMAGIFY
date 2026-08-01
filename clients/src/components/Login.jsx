@@ -34,6 +34,8 @@ const Login = () => {
         // console.log("Submitting Register Form with:", { name, email, password }); // Debugging log
         const { data } = await axios.post(backendUrl + '/api/user/register', { name, email, password })
 
+        // console.log("backend resposne",data)
+
         if (data.success) {
           setToken(data.token)
           setUser(data.user)
